@@ -1,0 +1,29 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:ColoredRectangle.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        Width="300" Height="300"
+        x:Class="ColoredRectangle.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="ColoredRectangle">
+  <Grid ColumnDefinitions="0.33*, 0.66*">
+
+    <StackPanel  Grid.Column="0">
+      <Button Click="ClickButton" Name="buttonKhaki" Background="Khaki" HorizontalAlignment="Stretch" >Khaki</Button>
+      <Button Click="ClickButton" Name="buttonRed" Background="Red" HorizontalAlignment="Stretch">Red</Button>
+      <Button Click="ClickButton" Name="buttonMediumVioletRed" Background="MediumVioletRed" HorizontalAlignment="Stretch">MediumVioletRed</Button>
+      <Button Click="ClickButton" Name="buttonBisque" Background="Bisque" HorizontalAlignment="Stretch">Bisque</Button>
+      <Button Click="ClickButton" Name="buttonLemonChiffon" Background="LemonChiffon" HorizontalAlignment="Stretch">LemonChiffon</Button>
+      <Button Click="ClickButton" Name="buttonPowderBlue" Background="PowderBlue" HorizontalAlignment="Stretch">PowderBlue</Button>
+      <Button Click="ClickButton" Name="buttonMintCream" Background="MintCream" HorizontalAlignment="Stretch">MintCream</Button>
+      <Button Click="ClickButton" Name="buttonMaroon" Background="Maroon" HorizontalAlignment="Stretch">Maroon</Button>
+      <Button Click="ClickButton" Name="buttonRosyBrown" Background="RosyBrown" HorizontalAlignment="Stretch">RosyBrown</Button>
+      <Button Click="ClickButton" Name="buttonLightPink" Background="LightPink" HorizontalAlignment="Stretch">LightPink</Button>
+
+    </StackPanel>
+    <Rectangle Name="Rect" Fill="LightGray" Grid.Column="1"/>
+
+  </Grid>
+</Window>
